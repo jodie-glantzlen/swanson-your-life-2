@@ -12,6 +12,8 @@ exports.up = function(knex) {
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.down = function() {
-  
-};
+exports.down = function(knex) {
+  knex.schema.alterTable('favourite_quotes', function (table) {
+    table.renameColumn('quote', 'liked_quotes');
+});
+}
