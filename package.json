@@ -57,7 +57,9 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
+    "@vscode/sqlite3": "^5.0.8",
     "express": "^4.17.2",
+    "knex": "^1.0.7",
     "superagent": "^8.0.0"
   },
   "prettier": {
