@@ -20,7 +20,7 @@ function GetQuoteByKeyword() {
 
   return (
     <div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <label htmlFor="">Another quote?
           <input type="text"
             placeholder="Enter a keyword, eg. 'steak'"
