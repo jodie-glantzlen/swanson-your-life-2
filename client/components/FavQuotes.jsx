@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { getLikedQuotes } from "../api/getQuotes"
+import { getLikedQuotes } from "../api/quotesApi"
 
 function FavQuotes () {
 

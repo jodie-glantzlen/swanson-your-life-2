@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { getQuotesByNumber } from "../api/getQuotes"
+import { getQuotesByNumber } from "../api/quotesApi"
 import Quote from "./Quote"
 
 function GetQuotesByNumber () {

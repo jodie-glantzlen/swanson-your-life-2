@@ -14,4 +14,18 @@ router.get('/', (req, res) => {
   })
 })
 
+router.post('/test', (req, res) => {
+  const likedQuote = req.body // this is formattedQuoteToSend
+  //console.log("POST from routes/quotes: ", likedQuote)
+  db.addQuote(likedQuote)
+  .then((quoteId) => {
+    res.json(quoteId)
+  })
+  .catch((err) => {
+    res.status(500).send(err.message)
+  })
+})
+
 module.exports = router
+
+// todo: format the req.body in here ?
