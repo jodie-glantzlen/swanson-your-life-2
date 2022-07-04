@@ -26,6 +26,7 @@ export function getLikedQuotes() {
 }
 
 export function addQuote(likedQuote) {
+  console.log('POST from quotesApi: ', likedQuote)
   return request
     .post('/api/v1/favourites/test')
     .send(likedQuote)
