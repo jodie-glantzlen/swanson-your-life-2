@@ -21,7 +21,7 @@ function FavQuotes () {
     <div>
       <h1>This is where your favourite quotes will be displayed!</h1>
       <ul>
-        {favQuotes?.map(quote => <li key={quote.id}>{quote.liked_quotes}</li>)}
+        {favQuotes?.map(quote => <li key={quote.id}>{quote.quote}</li>)}
       </ul>
     </div>
   )

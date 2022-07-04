@@ -5,7 +5,7 @@ function Quote({quote}) {
 
   const handleClick = () => {
     const formattedQuoteToSend = {
-      "liked_quotes": quote[0]
+      "quote": quote[0]
     }
 
     // This is a temporary solution to make it work
